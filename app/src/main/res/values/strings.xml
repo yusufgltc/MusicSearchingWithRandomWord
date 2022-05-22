@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MusicSearchingWithRandomWord</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selected_value">Selected Value :</string>
+    <string name="go_to_random_word_list">Go to Random Word List</string>
+</resources>

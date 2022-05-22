@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="randomWord"
+            type="com.example.android.musicsearchingwithrandomword.network.models.RandomWord" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/textViewWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{randomWord.word}"
+            tools:text="Word"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewDefinition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{randomWord.definition}"
+            tools:text="Definition"
+            app:layout_constraintStart_toStartOf="@+id/textViewWord"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWord" />
+
+        <TextView
+            android:id="@+id/textViewPronunciation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{randomWord.pronunciation}"
+            tools:text="Pronunciation"
+            app:layout_constraintStart_toStartOf="@+id/textViewDefinition"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDefinition" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
