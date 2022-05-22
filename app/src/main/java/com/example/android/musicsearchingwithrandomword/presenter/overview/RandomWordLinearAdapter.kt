@@ -29,6 +29,10 @@ class RandomWordLinearAdapter : ListAdapter<RandomWord,
         holder.bind(randomWord)
     }
 
+    /**
+     * Diff callback
+     * DiffUtil which is for calculating the differences between two lists
+     */
     companion object DiffCallback : DiffUtil.ItemCallback<RandomWord>() {
         override fun areItemsTheSame(oldItem: RandomWord, newItem: RandomWord): Boolean {
             return oldItem === newItem

@@ -4,6 +4,13 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
+/**
+ * Overview view model factory
+ * Simple ViewModel factory that provides the selectedNum and context to the ViewModel.
+ * @property selectedNumber comes with args
+ * @property application
+ * @constructor Create empty Overview view model factory
+ */
 class OverviewViewModelFactory(
     private val selectedNumber: Int,
     private val application: Application

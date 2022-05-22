@@ -17,7 +17,6 @@ class OverviewFragment : Fragment() {
     ): View? {
         val binding = FragmentOverviewBinding.inflate(inflater)
         // Allows Data Binding to Observe LiveData with the lifecycle of this Fragment
-        @Suppress("UNUSED_VARIABLE")
         binding.lifecycleOwner = this
         val args = OverviewFragmentArgs.fromBundle(requireArguments()).selectedNum
         val application = requireNotNull(activity).application

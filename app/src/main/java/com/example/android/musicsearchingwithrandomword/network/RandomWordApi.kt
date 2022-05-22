@@ -7,10 +7,17 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
+/**
+ * Moshi is a modern JSON library for Android, Java and Kotlin.
+ * It makes it easy to parse JSON into Java and Kotlin classes.
+ */
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
     .build()
 
+/**
+ * Building a retrofit object
+ */
 private val retrofit = Retrofit.Builder()
     .addConverterFactory(MoshiConverterFactory.create(moshi))
     .baseUrl(BASE_URL)
